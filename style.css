@@ -5,6 +5,7 @@ header {
     padding: 40px 20%;
     right: 0;
     top: 0;
+    cursor: pointer;
 }
 header img {
     height: 50px;
