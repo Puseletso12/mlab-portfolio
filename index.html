@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Tilt+Neon&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Neon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,11 +14,11 @@
       <div class="logo">
         <img src="./assets/Chuene E. Logo_Wide RGB.png" alt="" />
       </div>
-      <div>
+      <div class="navbar">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="">About Me</a></li>
-          <li><a href="">Contact Me</a></li>
+          <li><a href="AboutMe.html">About Me</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
         </ul>
       </div>
     </header>
@@ -43,23 +40,73 @@
       <div class="my-content">
         <h2 id="name">Puseletso Chuene</h2>
         <br />
-        <h4>I am passionate about developing</h4>
-        <h4>digital experiences that</h4>
-        <h4>are both visually stunning and</h4>
-        <h4>intuitive, and always strive to</h4>
-        <h4>develop websites that delight</h4>
-        <h4>and engage users</h4>
+        <h5>I am passionate about developing</h5>
+        <h5>digital experiences that</h5>
+        <h5>are both visually stunning and</h5>
+        <h5>intuitive, and always strive to</h5>
+        <h5>develop websites that delight</h5>
+        <h5>and engage users</h5>
       </div>
 
       <div>
         <img class="my-img" src="./assets/portrait.jpg" alt="" />
       </div>
-
-      
     </div>
+
     <div class="footer">
-      <div class="footer-items">
-        56456
+      <div class="footer-content">
+        <div class="row">
+          <div class="footer-items">
+            <h4>Adress</h4>
+            <h6>5 Kreef Crescent</h6>
+            <h6>Bendor</h6>
+          </div>
+          <div class="footer-items">
+            <h4>Quicklinks</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="AboutMe.html">About Me</a></li>
+              <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+          </div>
+          <div
+          class="footer-items"
+          style="
+            max-width: 100%;
+            list-style: none;
+            transition: none;
+            overflow: hidden;
+            width: 380px;
+            height: 380px;
+          "
+        >
+          <h3>Map</h3>
+          <div
+            id="google-maps-canvas"
+            style="height: 50%; width: 70%; max-width: 100%"
+          >
+            <iframe
+              style="height: 100%; width: 100%; border: 0"
+              frameborder="0"
+              src="https://www.google.com/maps/embed/v1/place?q=5+Kreef+Crescent,+Bendor+Ext+32,+Polokwane,+South+Africa&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            ></iframe>
+          </div>
+          <a
+            class="from-embedmap-code"
+            href="https://www.bootstrapskins.com/themes"
+            id="auth-map-data"
+          ></a
+          ><style>
+            #google-maps-canvas img.text-marker {
+              max-width: none !important;
+              background: none !important;
+            }
+            img {
+              max-width: none;
+            }
+          </style>
+        </div>
+        </div>
       </div>
     </div>
   </body>

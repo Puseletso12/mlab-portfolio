@@ -14,16 +14,17 @@ body {
 header {
   display: flex;
   justify-content: space-around;
+  background-color: whitesmoke;
 }
 .logo img {
   height: 110px;
   width: 280px;
 }
-ul {
+ .navbar ul{
   display: flex;
   list-style-type: none;
 }
-li {
+ .navbar li{
   padding: 2rem;
 }
 
@@ -48,11 +49,121 @@ li a {
 .my-content {
   line-height: 4rem;
   font-size: 2rem;
+  /* border-bottom: 8px solid #222222; */
 }
 
+
 #name {
-  color: #61809d;
+  color: #ffa113;
 }
 .footer {
-  display: flex;
+    border-top: 8px solid #222222;
 }
+.footer-items {
+    text-transform: capitalize;
+    /* width: 190px; */
+    margin: auto;
+    padding: 7px;
+}
+.footer-items ul {
+    text-align: center;
+    list-style: none;
+} 
+.footer-items ul:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    text-align: center;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1325px) {
+    header {
+      padding: 16px 3%;
+    }
+  
+    header .sticky {
+      padding: 20px 3%;
+    }
+    section {
+      padding: 130px 3% 60px;
+    }
+  }
+  
+  @media (max-width: 970px) {
+    :root {
+      --heading-font: 4.2rem;
+      --second-heading: 2.7rem;
+      --paragraph-font: 1rem;
+    }
+  
+    section {
+      padding: 70px 3% 60px;
+    }
+  
+    .home {
+      height: 85vh;
+      overflow: hidden;
+    }
+  
+    .about {
+      grid-template-columns: 1fr;
+    }
+  
+    .about-img {
+      text-align: center;
+    }
+  
+    .contact {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 830px) {
+    :root {
+      --heading-font: 3.7rem;
+      --second-heading: 2.4rem;
+      --paragraph-font: 1rem;
+    }
+    #menu-icon {
+      display: block;
+    }
+  
+    .navbar {
+      position: absolute;
+      top: -600px;
+      right: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      background: var(--other-color);
+      text-align: left;
+      transition: all 0.5s ease;
+    }
+  
+    .navbar a {
+      display: block;
+      padding: 1rem;
+      margin: 1rem;
+    }
+  
+    .navbar.active {
+      top: 100%;
+    }
+  }
+  @media (max-width: 370px) {
+    .portfolio-content {
+      display: block;
+    }
+    .port {
+      margin-bottom: 20px;
+    }
+  }
+  
