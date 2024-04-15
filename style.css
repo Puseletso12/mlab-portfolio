@@ -51,7 +51,13 @@ li a {
   font-size: 2rem;
   /* border-bottom: 8px solid #222222; */
 }
-
+#menu-icon {
+    font-size: 3rem;
+    color: black;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+  }
 
 #name {
   color: #ffa113;
@@ -80,90 +86,3 @@ h3 {
     display: flex;
     flex-wrap: wrap;
 }
-
-
-/* Responsive */
-
-@media (max-width: 1325px) {
-    header {
-      padding: 16px 3%;
-    }
-  
-    header .sticky {
-      padding: 20px 3%;
-    }
-    section {
-      padding: 130px 3% 60px;
-    }
-  }
-  
-  @media (max-width: 970px) {
-    :root {
-      --heading-font: 4.2rem;
-      --second-heading: 2.7rem;
-      --paragraph-font: 1rem;
-    }
-  
-    section {
-      padding: 70px 3% 60px;
-    }
-  
-    .home {
-      height: 85vh;
-      overflow: hidden;
-    }
-  
-    .about {
-      grid-template-columns: 1fr;
-    }
-  
-    .about-img {
-      text-align: center;
-    }
-  
-    .contact {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  @media (max-width: 830px) {
-    :root {
-      --heading-font: 3.7rem;
-      --second-heading: 2.4rem;
-      --paragraph-font: 1rem;
-    }
-    #menu-icon {
-      display: block;
-    }
-  
-    .navbar {
-      position: absolute;
-      top: -600px;
-      right: 0;
-      left: 0;
-      display: flex;
-      flex-direction: column;
-      background: var(--other-color);
-      text-align: left;
-      transition: all 0.5s ease;
-    }
-  
-    .navbar a {
-      display: block;
-      padding: 1rem;
-      margin: 1rem;
-    }
-  
-    .navbar.active {
-      top: 100%;
-    }
-  }
-  @media (max-width: 370px) {
-    .portfolio-content {
-      display: block;
-    }
-    .port {
-      margin-bottom: 20px;
-    }
-  }
-  
