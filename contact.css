@@ -11,7 +11,9 @@
   align-items: center;
   gap: 3rem;
 }
-
+.contact-text {
+  text-align: center;
+}
 .contact-text h4 {
   margin: 15px 0;
   color: var(--main-color);
@@ -24,6 +26,7 @@
   font-size: var(--paragraph-font);
   line-height: 30px;
   margin-bottom: 2rem;
+  
 }
 
 .contact-list {
@@ -39,28 +42,22 @@
   font-size: var(--paragraph-font);
 }
 
-.social-icons i {
-  height: 40px;
-  width: 40px;
+.social-icons {
+  display: flex;
+  padding: 20px;
+  height: 100px;
+  width: 210px;
   border-radius: 0.5rem;
-  background: var(--other-color);
-  color: var(--main-color);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   font-size: 18px;
   margin-right: 10px;
-  transition: all 0.5s ease;
 }
 
-.social-icons i:hover {
-  transform: scale(1.01) translateY(-6px);
-  color: var(--text-color);
-  background: var(--main-color);
-}
+
 
 .contact-form form {
   position: relative;
+  width: 1000px;
+  padding: 80px;
 }
 
 .contact-form form input,
@@ -97,6 +94,8 @@ form textarea:focus {
 }
 button {
     border-radius: 5%;
-    margin: 20px;
+    margin: 30px;
     background-color: rgb(118, 113, 113);
+    height: 50px;
+    padding-bottom: 30px;
 }

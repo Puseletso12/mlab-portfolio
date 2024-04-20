@@ -1,19 +1,47 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
 
-  .about-me p {
-    
+.about-me p {
+  border: 1px solid;
+  margin: 100px;
+  padding: 100px;
   line-height: 20px;
-  margin-bottom: 2rem;
   font-weight: 500;
-  }
-  button {
-    width: 80px;
-    height: 30px;
-    margin: 30px;
-    border-radius: 10px;
-  }
+  border-radius: 30px;
+}
+
+.cards {
+  border: 1px solid;
+  width: 300px;
+  margin: 80px;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+.cards img {
+  height: 200px;
+  width: 200px;
+}
+
+
+button {
+  width: 80px;
+  height: 30px;
+  margin: 30px;
+  border-radius: 10px;
+  color: aqua;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: aqua;
+  box-shadow: 0 0 5px aqua, 0 0 25px aqua, 0 0 50px aqua, 0 0 200px aqua;
+}
+
+.headings {
+  text-align: center;
+}
