@@ -27,6 +27,9 @@ header {
  .navbar li{
   padding: 2rem;
 }
+.navbar .active {
+  color: #ffa113;
+}
 
 li a {
   text-decoration: none;
@@ -45,6 +48,7 @@ li a {
   width: 380px;
   height: 380px;
   border-radius: 50%;
+  animation: floatImage 4s ease-in-out infinite;
 }
 .my-content {
   line-height: 4rem;
@@ -93,4 +97,17 @@ footer {
 .maps {
   
   margin-top: 10px;
+}
+
+@keyframes floatImage {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-2.4rem);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
 }

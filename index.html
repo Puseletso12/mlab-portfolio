@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Neon&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    
   </head>
   <body>
     <header>
@@ -19,9 +20,9 @@
       </div>
       <div class="navbar">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="AboutMe.html">About Me</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="AboutMe.html" class="active">About Me</a></li>
+          <li><a href="contact.html" class="active">Contact Me</a></li>
         </ul>
       </div>
     </header>
@@ -67,13 +68,14 @@
         </div>
         <div class="quick-links">
           <h3>Quick Links</h3>
-          <a href="#Home">Home</a> <br>
-          <a href="AboutMe.html">About Me</a> <br>
+          <a href="#Home">Home</a> <br />
+          <a href="AboutMe.html">About Me</a> <br />
           <a href="contact.html">Contact Me</a>
         </div>
         <div class="map">
           <h3>Map</h3>
-          <div class="maps"
+          <div
+            class="maps"
             id="google-maps-canvas"
             style="height: 60%; width: 70%; max-width: 100%"
           >
@@ -100,5 +102,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
